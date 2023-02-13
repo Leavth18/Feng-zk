@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Document</title>
+  <script src="./jquery.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+
+    }
+
+    .box1 {
+      margin: 100px auto;
+      width: 1280px;
+      height: 768px;
+      background: url("images/夏1.jpeg") no-repeat;
+      position: relative;
+    }
+
+    .box1 img {
+      position: absolute;
+      transition: all .5s;
+      opacity: 0;
+    }
+
+    .box1 img:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+<div class="box1">
+	
+  <img alt="" id="img-0" src="images冬/夏1.jpeg">
+  <img alt="" id="img-1" src="images冬/1.png">
+  <img alt="" id="img-2" src="images冬/2.png">
+  <img alt="" id="img-3" src="images冬/3.png">
+  <img alt="" id="img-4" src="images冬/4.png">
+  <img alt="" id="img-5" src="images冬/5.png">
+  <img alt="" id="img-6" src="images冬/6.png">
+  <img alt="" id="img-6" src="images冬/7.png">
+  <img alt="" id="img-6" src="images冬/8.png">
+  <img alt="" id="img-6" src="images冬/9.png">
+  <img alt="" id="img-6" src="images冬/10.png">
+  <img alt="" id="img-6" src="images冬/11.png">
+    <img alt="" class="buttom" id="btn" src="返回.png" onclick="choice.html">
+</div>
+<script>
+  $(function () {
+    const box1 = $(".box1")
+    const imgs = box1.find("img")
+    let index = 1
+    box1.on("click", function () {
+      imgs.eq(index).animate({
+        opacity: 1
+      }, 500)
+      index++
+    })
+  })
+  $('#btn').click(function () {
+      window.location.href="choice.html"
+  })
+
+</script>
+</body>
+</html>

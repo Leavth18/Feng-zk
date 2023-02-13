@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="./jquery.js"></script>
+    <title>选画</title>
+    <style >
+        body{
+            background: url("未命名作品.png") center no-repeat;
+            width: 1280px;
+            height: 768px;
+        }
+        .pic1{
+            translate: 100px -5px;
+			transition: all 0.4s
+        }
+		.pic1:hover {
+		    box-shadow: 0 8px 8px 0 grey;  
+		    transform: translate(0, -10px); 
+		}
+		
+
+        .pic2 {
+            translate: 480px -770px;
+			transition: all 0.4s
+
+        }
+		.pic2:hover {
+		    box-shadow: 0 8px 8px 0 grey;  
+		    transform: translate(0, -10px); 
+		}
+		
+	
+        .pic3{
+            translate: 750px -1550px;
+			transition: all 0.4s
+        }
+		.pic3:hover {
+		    box-shadow: 0 8px 8px 0 grey;  
+		    transform: translate(0, -10px); 
+		}
+		
+
+        .pic4{
+            translate: 970px -2320px;
+			transition: all 0.4s
+        }
+		.pic4:hover {
+		    box-shadow: 0 8px 8px 0 grey;  
+		    transform: translate(0, -10px); 
+		}
+
+    </style>
+</head>
+<body>
+      <div class="pic1" href="chunJZ.html"><img id="chun" src="选画春.png" alt="" ></div>
+      <div class="pic2" href="xiaJZ.html"><img id="xia" src="选画夏.png" alt=""></div>
+      <div class="pic3"  href="qiuJZ.html"><img id="qiu" src="选画秋.png" alt=""></div>
+      <div class="pic4"  href="dongJZ.html"><img id="dong" src="选画冬.png" alt=""></div>
+</body>
+<script>
+
+  $('#chun').click(function () {
+      window.location.href="chunJZ.html"
+  })
+  $('#xia').click(function () {
+      window.location.href="xiaJZ.html"
+  })
+  $('#qiu').click(function () {
+      window.location.href="qiuJZ.html"
+  })
+  $('#dong').click(function () {
+      window.location.href="dongJZ.html"
+  })
+
+</script>
+</html>
